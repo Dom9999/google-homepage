@@ -1,12 +1,11 @@
 /*CSS Style sheet*/
 * {
-	font-family: Arial;
+	font-family: arial, sans-serif;
 	font-size: 13px;
 }
 
 .header {
-	width: 100%;
-	height: 50px;
+	width: 100%
 }
 
 a {
@@ -15,35 +14,21 @@ a {
 }
 
 .nav {
-	position: relative;
-	display: inline;
-	top: 15px;
+	position: absolute;
+	right: 0;
+	top: 24px;
+}
+
+.navtext {
+	padding-right: 18px;
+}
+
+.navbuttons {
+	padding-right: 18px;
 }
 
 a:hover {
 	text-decoration: underline;
-}
-
-#username {
-	color: grey;
-	margin-left: 85%;
-}
-
-#mail {
-	margin-left: 10px;
-}
-
-#images {
-	margin-left: 10px;
-}
-
-#apps {
-	top: 17px;
-	margin-left: 10px;
-}
-
-#note {
-	top: 25px;
 }
 
 #plus {
@@ -51,19 +36,20 @@ a:hover {
 	width: 36px;
 	height: 36px;
 	border-radius: 18px;
-	background-color: #4d2600;
+	background-color: #695309;
 	float: right;
-	top: 20px;
 	margin-right: 10px;
+	margin-left: 10px;
 	text-align: center;
 	font-size: 18px;
 	color: #fff;
 	line-height: 36px;
+	right: 12px;
+	bottom: 10px;
 }
 
 .main {
 	width: 100%;
-	height: 843px;
 }
 
 #logo {
@@ -74,51 +60,106 @@ a:hover {
 }
 
 #searchbar {
-	width: 700px;
-	height: 36px;
+	width: 582px;
+	height: 44px;
 	clear: both;
-	margin-left: calc(50% - 350px);
 	font-family: Arial;
 	font-size: 16px;
+	margin-top: 30px;
+	border-style: solid;
+	box-shadow: 2px 1px #cacaca;
+	border-width: 1px;
+	border-color: #f2f2f2;
 }
 
-#searchbutton {
-	width: 200px;
-	height: 36px;
+#searchbar:hover {
+	box-shadow: 3px 2px #cacaca;
+}
+
+
+#searchbar:focus {
+	box-shadow: 3px 2px #cacaca;
+	outline: none;
+}
+
+.buttonbar {
+	padding-top: 18px;
+}
+
+.button {
+	height: 34px;
 	background-color: #f2f2f2;
 	border-width: 0px;
+	margin-top: 11px; 
 	font-weight: bold;
-	margin-left: calc(50% - 200px);
-	margin-top: 20px;
+	color: #666;
+	margin-left: 24px;
+	padding-right: 24px;
+	padding-left: 24px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-#lucky {
-	width: 200px;
-	height: 36px;
-	background-color: #f2f2f2;
-	border-width: 0px;
-	font-weight: bold;	
-	margin-left: 10px;
-	margin-top: 20px;
+.button:hover {
+	border-width: : 3px;
+	border-color: black;
+	color: black;
 }
 
 .footer {
+	position: fixed;
 	width: 100%;
-	height: 45px;
+	height: 41px;
+	bottom: 41px;
+	left: 0;
+	background-color: #f2f2f2;
+	border-bottom-style: solid;
+	border-color: #cacaca;
+	border-bottom-width: 1px;
+}
+
+.bottomfooter {
+	position: fixed;
+	width: 100%;
+	height: 41px;
+	bottom: 0;
+	left: 0;
 	background-color: #f2f2f2;
 }
 
-.footerl {
-	position: relative;
-	display: inline;
-	top: 20px;
-	margin-left: 10px;
+.footertext {
+	position: absolute;
+	padding-left: 27px;
+	color: rgba(0,0,0, .54);
+	text-align: center;
+	padding-top: 12px;
+	font-size: 15px;
 }
 
-.footerr {
+.rbf {
+	position: absolute;
+	padding-top: 13px;
+	padding-left: 0;
+}
+
+.rbft {
 	position: relative;
-	float: right;
-	display: inline;
-	top: 20px;
-	margin-left: 20px;
+	padding-left: 27px;
+	color: rgba(0,0,0, .54);
+	border-width: 1px;
+}
+
+.lbf {
+	position: absolute;
+	padding-top: 13px;
+	right: 0;
+}
+
+.lbft {
+	position: relative;
+	padding-right: 27px;
+	color: rgba(0,0,0, .54);
+	border-width: 1px;
+}
+
 }
